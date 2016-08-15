@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="Colin Cohen">
+<meta name="description" content="Even Punk Girls is set of books about a larger-than-life-woman who loves even harder than she punches.">
+<title>Even Punk Girls</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="lib/slick.css" rel="stylesheet" type="text/css" />
+<link href="lib/slick-theme.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" href="images/favicon.ico">
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="lib/slick.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+"use strict";
+$(document).ready(function() {
+	var i;
+	
+	for (i = 1; i <= 85; i++) {
+		$('.carousel').append('<div class="item"><img data-lazy="images/quotes' + ("0000" + i).substr(-4, 4) + '.jpg" alt="Even Punk Girls Blush Quote"></div>');
+	}
+	$('.carousel').slick({
+		slidesToShow : 5,
+		infinite: false,
+		lazyLoad : 'progressive'
+	}); 
+});
+//]]>
+</script>
+</head>
+<body style="background-color:#000000; color:#FFFFFF;">
+<center>
+<img src="images/logo.png" style="width: 35vw;" />
+<p>Meet Rudi—a larger-than-life young woman who will make you feel.</p>
+<p>You can download these books for free, and pass them along to your friends:</p>
+<p><em><a title="Even Punk Girls Blush" target="_blank" href="https://drive.google.com/open?id=0B3TvHbZBlvFMcnR4WU5LM0ctYjg">Even Punk Girls Blush<br /></a>
+<a title="Even Punk Girls Cry" target="_blank" href="https://drive.google.com/open?id=0B3TvHbZBlvFMN25FdTdiWU5PQWs">Even Punk Girls Cry</a></em></p>
+<h2><i>Even Punk Girls Blush</i> Told Through Quotes</h2>
+</center>
+<div id="slick" class="carousel">
+</div>
+</body>
+</html>

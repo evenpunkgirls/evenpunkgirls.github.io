@@ -1,0 +1,27 @@
+#slick {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#slick .item {
+	margin: 10px;
+}
+
+#slick .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a {
+	color: #888888;
+}
+
+p {
+	font-size: 125%;
+}
+
+h2 {
+	margin-top: 1.5em;
+	margin-bottom: 0;
+}
