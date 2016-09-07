@@ -14,7 +14,8 @@
 }
 
 a {
-	color: #888888;
+	color: #e2ceff;
+	text-shadow: 0 0 3px #e2ceff;
 }
 
 p {
@@ -22,6 +23,6 @@ p {
 }
 
 h2 {
-	margin-top: 1.5em;
+	margin-top: 1.25em;
 	margin-bottom: 0;
 }
