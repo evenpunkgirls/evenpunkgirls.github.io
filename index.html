@@ -21,9 +21,18 @@ $(document).ready(function() {
 	var i;
 	
 	for (i = 1; i <= 85; i++) {
-		$('.carousel').append('<div class="item"><img data-lazy="images/quotes' + ("0000" + i).substr(-4, 4) + '.jpg"</div>');
+		$('#slickOne').append('<div class="item"><img data-lazy="images/quotes' + ("0000" + i).substr(-4, 4) + '.jpg"</div>');
 	}
-	$('.carousel').slick({
+	$('#slickOne').slick({
+		slidesToShow : 5,
+		infinite: false,
+		lazyLoad : 'ondemand'
+	}); 
+	
+	for (i = 1; i <= 85; i++) {
+		$('#slickTwo').append('<div class="item"><img data-lazy="images/quotes.two.' + ("0000" + i).substr(-4, 4) + '.jpg"</div>');
+	}
+	$('#slickTwo').slick({
 		slidesToShow : 5,
 		infinite: false,
 		lazyLoad : 'ondemand'
@@ -32,18 +41,29 @@ $(document).ready(function() {
 //]]>
 </script>
 </head>
-<body style="background-color:#000000; color:#FFFFFF;">
+<body style="background-color:#000000; color:#EEEEEE;">
 <center>
 <img src="images/logo.png" style="width: 35vw;" />
-<p>Meet Rudi Weiss—a larger-than-life young woman who loves even harder than she punches—a woman who will make you feel.</p>
-<p>You may download these books, and pass them along to your friends:</p>
+<!--p>Meet Rudi Weiss—a larger-than-life young woman who loves even harder than she punches—a woman who will make you feel.</p-->
+<p style="font-size: 115%;">Rudi is a tough urban punk who’s kept everyone at fist’s length when she’s caught selling drugs and given a choice: either spend the rest of her high school years in juvie or live with a strict ex-Marine in a sleepy suburb.<br><br>
+
+Choosing the suburb in order to hide from a violent drug dealer she now owes and whose interest in her goes beyond money, Rudi conflicts with everything she encounters. She especially conflicts with Tommy, a prep star who represents everything she hates. But the more she learns about him, the more she sees herself in him—and, when she can no longer not care about him, that’s when her real troubles begin. Because that’s when the drug dealer spots them together, and, in a jealous rage, threatens Rudi not with her own life but with Tommy’s, which will test just how much she cares.<br><br>
+
+<b>Even Punk Girls</b> is a set of books about finding the true person underneath the illusion—with a hero who loves even harder than she punches—a hero who will make you feel.
+</p>
+<!--p>You may download these books, and pass them along to your friends:</p-->
 <p><em><a title="Even Punk Girls Blush" target="_blank" href="https://drive.google.com/open?id=0B3TvHbZBlvFMcnR4WU5LM0ctYjg">Even Punk Girls Blush<br /></a>
 <a title="Even Punk Girls Cry" target="_blank" href="https://drive.google.com/open?id=0B3TvHbZBlvFMN25FdTdiWU5PQWs">Even Punk Girls Cry</a></em></p>
 <!--p><a title="Newsletter" href="http://tinyletter.com/evenpunkgirls/">Newsletter</a> (sign up for notifications of new books)</p-->
-<p>On <a title="pinterest" target="_blank" href="https://www.pinterest.com/evenpunkgirls/">pinterest</a></p>
+<p><a title="Pinterest" target="_blank" href="https://www.pinterest.com/evenpunkgirls/">Pinterest</a></p>
 <h2 style="color:#e2ceff; text-shadow: 0 0 3px #e2ceff;"><i>Even Punk Girls Blush</i> Told Through Quotes</h2>
 </center>
-<div id="slick" class="carousel">
+<div id="slickOne" class="carousel">
+</div>
+<center>
+<h2 style="color:#ffadad; text-shadow: 0 0 3px #ffadad;"><i>Even Punk Girls Cry</i> Told Through Quotes</h2>
+</center>
+<div id="slickTwo" class="carousel">
 </div>
 </body>
 </html>

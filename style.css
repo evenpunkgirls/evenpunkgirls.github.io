@@ -1,25 +1,40 @@
-#slick {
+#slickOne {
 	margin-left: 25px;
 	margin-right: 25px;
 }
 
-#slick .item {
+#slickOne .item {
 	margin: 10px;
 }
 
-#slick .item img {
+#slickOne .item img {
 	display: block;
 	width: 100%;
 	height: auto;
 }
 
+#slickTwo {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#slickTwo .item {
+	margin: 10px;
+}
+
+#slickTwo .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
 a {
-	color: #e2ceff;
-	text-shadow: 0 0 3px #e2ceff;
+	color: #999999;
+	text-shadow: 0 0 2px #999999;
 }
 
 p {
 	font-size: 125%;
+	text-shadow: 0 0 2px #FFFFFF;
 }
 
 h2 {
