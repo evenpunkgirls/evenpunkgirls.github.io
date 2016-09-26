@@ -21,7 +21,7 @@ $(document).ready(function() {
 	var i;
 	
 	for (i = 1; i <= 85; i++) {
-		$('#slickOne').append('<div class="item"><img data-lazy="images/quotes' + ("0000" + i).substr(-4, 4) + '.jpg"</div>');
+		$('#slickOne').append('<div class="item"><img title="Quote from Even Punk Girls Blush" data-lazy="images/quotes' + ("0000" + i).substr(-4, 4) + '.jpg"></div>');
 	}
 	$('#slickOne').slick({
 		slidesToShow : 5,
@@ -30,9 +30,18 @@ $(document).ready(function() {
 	}); 
 	
 	for (i = 1; i <= 85; i++) {
-		$('#slickTwo').append('<div class="item"><img data-lazy="images/quotes.two.' + ("0000" + i).substr(-4, 4) + '.jpg"</div>');
+		$('#slickTwo').append('<div class="item"><img title="Quote from Even Punk Girls Cry" data-lazy="images/quotes.two.' + ("0000" + i).substr(-4, 4) + '.jpg"></div>');
 	}
 	$('#slickTwo').slick({
+		slidesToShow : 5,
+		infinite: false,
+		lazyLoad : 'ondemand'
+	}); 
+	
+	for (i = 1; i <= 27; i++) {
+		$('#slickThree').append('<div class="item"><img title="Quote from Angels Have Spikes" data-lazy="images/quotes.three.' + ("0000" + i).substr(-4, 4) + '.jpg"></div>');
+	}
+	$('#slickThree').slick({
 		slidesToShow : 5,
 		infinite: false,
 		lazyLoad : 'ondemand'
@@ -54,7 +63,7 @@ Choosing the suburb in order to hide from a violent drug dealer she now owes and
 <!--p>You may download these books, and pass them along to your friends:</p-->
 <p><em><a title="Even Punk Girls Blush" target="_blank" href="https://drive.google.com/open?id=0B3TvHbZBlvFMcnR4WU5LM0ctYjg">Even Punk Girls Blush<br /></a>
 <a title="Even Punk Girls Cry" target="_blank" href="https://drive.google.com/open?id=0B3TvHbZBlvFMN25FdTdiWU5PQWs">Even Punk Girls Cry</em><br /></a>
-<span style="color: #999999; text-shadow: 0 0 1.5px;"><em>Angels Have Spikes</em> (Comming Soon)</span></p>
+<span style="color: #999999; text-shadow: 0 0 1.5px;"><em>Angels Have Spikes</em> (Coming Soon)</span></p>
 <!--p><a title="Newsletter" href="http://tinyletter.com/evenpunkgirls/">Newsletter</a> (sign up for notifications of new books)</p-->
 <p><a title="Pinterest" target="_blank" href="https://www.pinterest.com/evenpunkgirls/">pinterest page</a><br />
 <a onClick="javascript:window.open('mailto:pabitel@yahoo.com', 'mail');event.preventDefault()" href="mailto:pabitel@yahoo.com">email</a></p>
@@ -67,6 +76,11 @@ Choosing the suburb in order to hide from a violent drug dealer she now owes and
 </center>
 <div id="slickTwo" class="carousel">
 </div>
-<center><img src="images/logo.2.png" title="&quot;The only hurt I feel is when you're not around.&quot;" style="width: 32.5vw; margin-top: 70px;" /></center>
+<center>
+<h2 style="color:#e2ffcd; text-shadow: 0 0 3px #e2ffcd;">Quotes From <i>Angels Have Spikes</i></h2>
+</center>
+<div id="slickThree" class="carousel">
+</div>
+<center><img src="images/logo.2.png" title="&quot;The only hurt I feel is when you're not around.&quot;" style="width: 32.5vw; margin-top: 70px; box-shadow: 0 0 3px #FFFFFF;"/></center>
 </body>
 </html>

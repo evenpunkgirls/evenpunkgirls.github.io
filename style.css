@@ -28,6 +28,21 @@
 	height: auto;
 }
 
+#slickThree {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#slickThree .item {
+	margin: 10px;
+}
+
+#slickThree .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 /*img {
 	margin-bottom: -25px;
 	padding: 0px;
