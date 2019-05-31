@@ -1,2 +1,2 @@
 # evenpunkgirls.github.io
-A series of books about a larger-than-life woman who loves even harder than she punches.
+A series of novels about a punk rock Cinderella who loves even harder than she punches.
